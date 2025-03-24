@@ -3,7 +3,7 @@ import random
 number = random.randint(1, 100)
 
 print("1~100 사이 숫자 맞추기 게임")
-print("기회는 10번입니다")
+print("기회는 10번입니다.")
 
 count = 0
 chance = 10
