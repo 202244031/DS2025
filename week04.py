@@ -4,7 +4,6 @@ class Node:
         self.link = link
 
 
-#a = Node("ABC")
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -21,11 +20,10 @@ class LinkedList:
         current = self.head
         result = ""
         while current is not None:
-            # print(current.data)
-            result = result + str(current.data) + " -> "
+            # result = result + str(current.data) + " -> "
+            result = result + f"{current.data} -> "
             current = current.link
-        return result
-        # return "Linked list!"
+        return result + "END"
 
 
 ll = LinkedList()
