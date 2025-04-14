@@ -26,6 +26,7 @@ class Queue :
         self.size = self.size - 1
         temp = self.front
         self.front = self.front.link  # move
+        temp.link = None
         if self.front is None:
             self.rear = None
         return temp.data
@@ -38,3 +39,5 @@ print(q.size, q.front.data, q.rear.data)
 print(q.dequeue())
 print(q.size, q.front.data, q.rear.data)
 print(q.dequeue())
+print(q.size, q.front, q.rear)
+
